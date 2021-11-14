@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8"/>
+        <title>{{ title }}</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="Justica - Lawyer and Attorney Website Template" name="description"/>
+        <meta content="" name="keywords"/>
+        <meta content="" name="author"/>
+        <link id="bootstrap" href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link id="bootstrap-grid" href="/assets/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
+        <link id="bootstrap-reboot" href="/assets/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/assets/css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="/assets/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        <link href="/assets/css/owl.theme.css" rel="stylesheet" type="text/css"/>
+        <link href="/assets/css/owl.transitions.css" rel="stylesheet" type="text/css"/>
+        <link href="/assets/css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        <link href="/assets/css/jquery.countdown.css" rel="stylesheet" type="text/css"/>
+        <link
+        href="assets/css/style.css" rel="stylesheet" type="text/css"/> <!-- color scheme -->
+        <link id="colors" href="assets/css/colors/scheme-01.css" rel="stylesheet" type="text/css"/>
+        <link
+        href="assets/css/coloring.css" rel="stylesheet" type="text/css"/> <!-- RS5.0 Stylesheet -->
+        <link rel="stylesheet" href="/assets/revolution/css/settings.css" type="text/css">
+        <link rel="stylesheet" href="/assets/revolution/css/layers.css" type="text/css">
+        <link rel="stylesheet" href="/assets/revolution/css/navigation.css" type="text/css">
+    </head>
+    <body>
+        <div id="wrapper">
+            {% include 'components/topbar.njk' %}
+            {% include 'components/header.njk' %}
+            <div class="no-bottom no-top" id="content">
+                <div id="top"></div>
+                {% include 'components/hero-slider.njk' %}
+                {% include 'components/cta.njk' %}
+                {% include 'components/intro.njk' %}
+                {% include 'components/services.njk' %}
+                {% include 'components/experiences.njk' %}
+                {% include 'components/practice-areas.njk' %}
+                {% include 'components/fun-facts.njk' %}
+                {% include 'components/team.njk' %}
+                {% include 'components/testimonials.njk' %}
+            </div>
+            <!-- content close -->
+            <a href="#" id="back-to-top"></a>
+            <!-- footer begin -->
+            {% include 'components/footer.njk' %}
+            <div id="preloader">
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript Files ================================================== -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/wow.min.js"></script>
+        <script src="/assets/js/jquery.isotope.min.js"></script>
+        <script src="/assets/js/easing.js"></script>
+        <script src="/assets/js/owl.carousel.js"></script>
+        <script src="/assets/js/validation.js"></script>
+        <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="/assets/js/enquire.min.js"></script>
+        <script src="/assets/js/jquery.stellar.min.js"></script>
+        <script src="/assets/js/jquery.plugin.js"></script>
+        <script src="/assets/js/typed.js"></script>
+        <script src="/assets/js/jquery.countTo.js"></script>
+        <script src="/assets/js/jquery.countdown.js"></script>
+        <script src="/assets/js/typed.js"></script>
+        <script src="/assets/js/designesia.js"></script>
+        <!-- RS5.0 Core JS Files -->
+        <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+        <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+        <!-- RS5.0 Extensions Files -->
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script>
+            jQuery(document).ready(function () { // revolution slider
+                jQuery("#slider-revolution").revolution({
+                    sliderType: "standard",
+                    sliderLayout: "fullwidth",
+                    delay: 5000,
+                    navigation: {
+                        arrows: {
+                            enable: true
+                        },
+                        bullets: {
+                            enable: true,
+                            hide_onmobile: false,
+                            style: "hermes",
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 20,
+                            v_offset: 30,
+                            space: 5
+                        }
+                    },
+                    parallax: {
+                        type: "mouse",
+                        origo: "slidercenter",
+                        speed: 2000,
+                        levels: [
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            12,
+                            16,
+                            10,
+                            50
+                        ]
+                    },
+                    responsiveLevels: [
+                        1920, 1380, 1240
+                    ],
+                    gridwidth: [
+                        1200, 1200, 940
+                    ],
+                    spinner: "off",
+                    gridheight: 700,
+                    disableProgressBar: "on"
+                });
+            });
+        </script>
+    </body>
+</html>
