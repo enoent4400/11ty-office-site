@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="{{ locale }}" dir="{{ dir }}">
     <head>
         <meta charset="utf-8"/>
         <title>{{ title }}</title>
@@ -7,23 +7,23 @@
         <meta content="Justica - Lawyer and Attorney Website Template" name="description"/>
         <meta content="" name="keywords"/>
         <meta content="" name="author"/>
-        <link id="bootstrap" href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link id="bootstrap-grid" href="/assets/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
-        <link id="bootstrap-reboot" href="/assets/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"/>
-        <link href="/assets/css/animate.css" rel="stylesheet" type="text/css"/>
-        <link href="/assets/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
-        <link href="/assets/css/owl.theme.css" rel="stylesheet" type="text/css"/>
-        <link href="/assets/css/owl.transitions.css" rel="stylesheet" type="text/css"/>
-        <link href="/assets/css/magnific-popup.css" rel="stylesheet" type="text/css"/>
-        <link href="/assets/css/jquery.countdown.css" rel="stylesheet" type="text/css"/>
+        <link id="bootstrap" href="{{ '/assets/css/bootstrap.min.css' | url }}" rel="stylesheet" type="text/css"/>
+        <link id="bootstrap-grid" href="{{ '/assets/css/bootstrap-grid.min.css' | url  }}" rel="stylesheet" type="text/css"/>
+        <link id="bootstrap-reboot" href="{{ '/assets/css/bootstrap-reboot.min.css' | url }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ '/assets/css/animate.css' | url }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ '/assets/css/owl.carousel.css' | url }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ '/assets/css/owl.theme.css' | url }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ '/assets/css/owl.transitions.css' | url }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ '/assets/css/magnific-popup.css' | url }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ '/assets/css/jquery.countdown.css' | url }}" rel="stylesheet" type="text/css"/>
         <link
-        href="assets/css/style.css" rel="stylesheet" type="text/css"/> <!-- color scheme -->
-        <link id="colors" href="assets/css/colors/scheme-01.css" rel="stylesheet" type="text/css"/>
+        href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" type="text/css"/> <!-- color scheme -->
+        <link id="colors" href="{{ '/assets/css/colors/scheme-01.css' | url }}" rel="stylesheet" type="text/css"/>
         <link
-        href="assets/css/coloring.css" rel="stylesheet" type="text/css"/> <!-- RS5.0 Stylesheet -->
-        <link rel="stylesheet" href="/assets/revolution/css/settings.css" type="text/css">
-        <link rel="stylesheet" href="/assets/revolution/css/layers.css" type="text/css">
-        <link rel="stylesheet" href="/assets/revolution/css/navigation.css" type="text/css">
+        href="{{ '/assets/css/coloring.css' | url }}" rel="stylesheet" type="text/css"/> <!-- RS5.0 Stylesheet -->
+        <link rel="stylesheet" href="{{ '/assets/revolution/css/settings.css' | url }}" type="text/css">
+        <link rel="stylesheet" href="{{ '/assets/revolution/css/layers.css' | url }}" type="text/css">
+        <link rel="stylesheet" href="{{ '/assets/revolution/css/navigation.css' | url }}" type="text/css">
     </head>
     <body>
         <div id="wrapper">
@@ -54,34 +54,34 @@
             </div>
         </div>
         <!-- Javascript Files ================================================== -->
-        <script src="/assets/js/jquery.min.js"></script>
-        <script src="/assets/js/bootstrap.min.js"></script>
-        <script src="/assets/js/wow.min.js"></script>
-        <script src="/assets/js/jquery.isotope.min.js"></script>
-        <script src="/assets/js/easing.js"></script>
-        <script src="/assets/js/owl.carousel.js"></script>
-        <script src="/assets/js/validation.js"></script>
-        <script src="/assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="/assets/js/enquire.min.js"></script>
-        <script src="/assets/js/jquery.stellar.min.js"></script>
-        <script src="/assets/js/jquery.plugin.js"></script>
-        <script src="/assets/js/typed.js"></script>
-        <script src="/assets/js/jquery.countTo.js"></script>
-        <script src="/assets/js/jquery.countdown.js"></script>
-        <script src="/assets/js/typed.js"></script>
-        <script src="/assets/js/designesia.js"></script>
+        <script src="{{ '/assets/js/jquery.min.js' | url }}"></script>
+        <script src="{{ '/assets/js/bootstrap.min.js' | url }}"></script>
+        <script src="{{ '/assets/js/wow.min.js' | url }}"></script>
+        <script src="{{ '/assets/js/jquery.isotope.min.js' | url }}"></script>
+        <script src="{{ '/assets/js/easing.js' | url }}"></script>
+        <script src="{{ '/assets/js/owl.carousel.js' | url }} "></script>
+        <script src="{{ '/assets/js/validation.js' | url }} "></script>
+        <script src="{{ '/assets/js/jquery.magnific-popup.min.js' | url }} "></script>
+        <script src="{{ '/assets/js/enquire.min.js' | url }}"></script>
+        <script src="{{ '/assets/js/jquery.stellar.min.js' | url }}"></script>
+        <script src="{{ '/assets/js/jquery.plugin.js' | url }}"></script>
+        <script src="{{ '/assets/js/typed.js' | url }}"></script>
+        <script src="{{ '/assets/js/jquery.countTo.js' | url }}"></script>
+        <script src="{{ '/assets/js/jquery.countdown.js' | url }}"></script>
+        <script src="{{ '/assets/js/typed.js' | url }}"></script>
+        <script src="{{ '/assets/js/designesia.js' | url }}"></script>
         <!-- RS5.0 Core JS Files -->
-        <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-        <script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0' | url }}"></script>
         <!-- RS5.0 Extensions Files -->
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.video.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.slideanims.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.navigation.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.actions.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.kenburn.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.migration.min.js' | url }}"></script>
+        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.parallax.min.js' | url }}"></script>
         <script>
             jQuery(document).ready(function () { // revolution slider
                 jQuery("#slider-revolution").revolution({

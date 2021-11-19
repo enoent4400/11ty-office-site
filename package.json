@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "start": "npm run serve",
+    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=production npx eleventy",
+    "debug": "cross-env DEBUG=* npx eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "lodash.get": "^4.4.2",
+    "cross-env": "^7.0.2",
+    "eleventy-plugin-i18n": "^0.1.3"
   }
 }
