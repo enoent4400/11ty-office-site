@@ -1,11 +1,12 @@
 {% set pageUrl = page.url.split('/').slice(2).join('/') %}
-{{ pageUrl | log}}
+{% set pageUrl = page.url.split('/').slice(2).join('/') %}
+{{ locale | log}}
 <div id="topbar" class="topbar-noborder">
     <div class="container">
         <div class="topbar-right">
             <div class="topbar-right">
                 <span class="topbar-widget">
-                    {% if page.fileSlug == 'en'%}
+                    {% if locale == 'en'%}
                         <a href="/sr/{{ pageUrl }}" hreflang="sr"><span>🇷🇸 &nbsp;</span>Srpski</a>
                     {% else %}
                         <a href="/en/{{ pageUrl }}" hreflang="en"><span>🇬🇧 &nbsp;</span>English</a>

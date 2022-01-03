@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>{{ title }}</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <meta content="Justica - Lawyer and Attorney Website Template" name="description"/>
+        <meta content="{{ meta }}" name="description"/>
         <meta content="" name="keywords"/>
         <meta content="" name="author"/>
         <link id="bootstrap" href="{{ '/assets/css/bootstrap.min.css' | url }}" rel="stylesheet" type="text/css"/>
@@ -30,16 +30,7 @@
             {% include 'components/topbar.njk' %}
             {% include 'components/header.njk' %}
             <div class="no-bottom no-top" id="content">
-                <div id="top"></div>
-                {% include 'components/hero-slider.njk' %}
-                {% include 'components/cta.njk' %}
-                {% include 'components/intro.njk' %}
-                {% include 'components/services.njk' %}
-                {% include 'components/experiences.njk' %}
-                {% include 'components/practice-areas.njk' %}
-                {% include 'components/fun-facts.njk' %}
-                {% include 'components/team.njk' %}
-                {% include 'components/testimonials.njk' %}
+                {{content | safe}}
             </div>
             <!-- content close -->
             <a href="#" id="back-to-top"></a>

@@ -1,6 +1,3 @@
- /* --------------------------------------------------
-  * © Copyright 2021 - Justica by Designesia
-  * --------------------------------------------------*/
 (function($) {
 	'use strict';
 
@@ -20,7 +17,7 @@
 	 var $op_header_autoshow = 0;
 	 var grid_size = 10;
      /* predefined vars end */
-	 
+
 	 if($('header').hasClass("has-topbar")){
 		  $tmp_h = '125px';
 	 }
@@ -207,7 +204,7 @@
          init();
          init_de();
          video_autosize();
-		 
+
 		 var header = $('header');
          header.removeClass('smaller');
          header.removeClass('logo-smaller');
@@ -215,13 +212,13 @@
 
          var mx = window.matchMedia("(max-width: 992px)");
 		 var osw = jQuery('.owl-slide-wrapper');
-         if (mx.matches) {			 
+         if (mx.matches) {
              osw.find("img").css("height", $(window).innerHeight());
              osw.find("img").css("width", "auto");
 			 if($op_header_autoshow==1){
 				 header.removeClass('autoshow');
 			 }
-			 
+
          } else {
              osw.find("img").css("width", "100%");
              osw.find("img").css("height", "auto");
@@ -255,7 +252,7 @@
 				}
 			}
          });
-		 
+
 		 jQuery("#ss-carousel").owlCarousel({
             center: true,
 			items:4,
@@ -291,7 +288,7 @@
                 }
             }
          });
-		 
+
          jQuery("#testimonial-carousel").owlCarousel({
             center: false,
 			loop:true,
@@ -310,7 +307,7 @@
          });
 
 
-		 
+
 		 jQuery("#blog-carousel").owlCarousel({
             center: false,
 			items:3,
@@ -328,7 +325,7 @@
 				}
 			}
          });
-		 
+
 		 jQuery("#blog-carousel-3").owlCarousel({
             center: true,
 			items:5,
@@ -346,7 +343,7 @@
 				}
 			}
          });
-		 
+
 		 jQuery("#owl-logo").owlCarousel({
             center: false,
 			items:6,
@@ -367,7 +364,7 @@
 				}
 			}
          });
-		 
+
 		 jQuery(".project-carousel-4-nav").owlCarousel({
             center: true,
 			items:4,
@@ -385,7 +382,7 @@
 				}
 			}
          });
-		 
+
 		 jQuery("#owl-features").owlCarousel({
             center: true,
 			items:4,
@@ -406,7 +403,7 @@
 				}
 			}
          });
-		 
+
          // Custom Navigation owlCarousel
          $(".next").on("click", function() {
              $(this).parent().parent().find('.blog-slide').trigger('owl.next');
@@ -675,7 +672,7 @@
              jQuery(this).parent().parent().find('.v-border').fadeTo(150, 0);
              jQuery(this).parent().parent().find('.de_tab_content > div').hide();
              var indexer = jQuery(this).index(); //gets the current index of (this) which is #nav li
-             jQuery(this).parent().parent().find('.de_tab_content > div:eq(' + indexer + ')').fadeIn(); //uses whatever index the link has to open the corresponding box 
+             jQuery(this).parent().parent().find('.de_tab_content > div:eq(' + indexer + ')').fadeIn(); //uses whatever index the link has to open the corresponding box
              jQuery(this).find('.v-border').fadeTo(150, 1);
          });
          // request quote function
@@ -720,7 +717,7 @@
              jQuery(this).fadeTo(150, 1);
              jQuery(this).parent().parent().find('.de_tab_content > div').hide();
              var indexer = jQuery(this).index(); //gets the current index of (this) which is #nav li
-             jQuery(this).parent().parent().find('.de_tab_content > div:eq(' + indexer + ')').show(); //uses whatever index the link has to open the corresponding box 
+             jQuery(this).parent().parent().find('.de_tab_content > div:eq(' + indexer + ')').show(); //uses whatever index the link has to open the corresponding box
          });
          // --------------------------------------------------
          // toggle
@@ -787,7 +784,7 @@
          });
          // mainmenu arrow click
          jQuery("#mainmenu > li > span").on("click", function() {
-             
+
              var iteration = $(this).data('iteration') || 1;
              switch (iteration) {
                  case 1:
@@ -979,7 +976,7 @@
              if (iteration > 2) iteration = 1;
              $(this).data('iteration', iteration);
          });
-		 
+
 		 $("#sw-1").click(function() {
 			if($(this).is(":checked")){
 				$('.opt-1').css('display','none');
@@ -1090,10 +1087,10 @@
 
          var preloader_pos = parseInt(jQuery(window).innerHeight() / 2) - 30;
          $(".preloader1").css("top", preloader_pos);
-		 
+
 		jQuery('.grid.border').css('padding-top', grid_size);
         jQuery('.grid.border').css('padding-left', grid_size);
-		
+
         jQuery("#selector .opt.tc1").addClass("active");
 
 		jQuery("#selector .opt").on("click", function() {
@@ -1110,8 +1107,8 @@
                      jQuery("#bootstrap-grid").attr("href", 'css/bootstrap-grid-rtl.min.css');
                      jQuery("#bootstrap-reboot").attr("href", 'css/bootstrap-reboot-rtl.min.css');
             };
-		 // rtl end // 
-		 
+		 // rtl end //
+
 		 jQuery("#selector #demo-rtl").on("click", function() {
 			var iteration = $(this).data('iteration') || 1;
 			 switch (iteration) {
@@ -1136,7 +1133,7 @@
 		 });
      }
 	 // de_init end //
-	 
+
 	 function grid_gallery() {
             jQuery('.grid-item').each(function () {
                 var this_col = Number(jQuery(this).parent().attr('data-col'));
@@ -1210,7 +1207,7 @@
          //jQuery('.center-y').css('margin-top', (($doc_height - picheight) / 2)-100);
          jQuery('.full-height .de-video-container').css("min-height", $doc_height);
 
-		 
+
 		 if(jQuery('header').hasClass("autoshow")){
 			 $op_header_autoshow = 1;
 		 }
@@ -1252,7 +1249,7 @@
          jQuery('#menu-btn').on("click", function() {
 
             var h = jQuery('header')[0].scrollHeight;
-			
+
              if (mobile_menu_show == 0) {
                  jQuery('header.header-mobile').stop(true).animate({
                      'height': h
@@ -1332,15 +1329,15 @@
          /* --------------------------------------------------
           after window load
           * --------------------------------------------------*/
-		 
+
         setTimeout(function () {
         $("#cookieConsent").fadeIn(400);
          }, 2000);
         $("#closeCookieConsent, .cookieConsentOK").click(function() {
             $("#cookieConsent").fadeOut(400);
-        }); 
+        });
 
-         
+
          // one page navigation
          /**
           * This part causes smooth scrolling using scrollto.js
@@ -1352,7 +1349,7 @@
                  jQuery('html,body').scrollTo(this.hash, this.hash);
              }
          });
-	
+
 		$('.accordion-section-title').click(function(e){
          var currentAttrvalue = $(this).data('tab');
          if($(e.target).is('.active')){
@@ -1363,7 +1360,7 @@
              $('.accordion-section-content').slideUp(300).filter(currentAttrvalue).slideDown(300);
          }
      });
-		
+
 
          /* --------------------------------------------------
           * window | on resize
@@ -1389,7 +1386,7 @@
                  horizontalScrolling: false,
                  verticalOffset: 0
              });
-			 
+
              /* fade base scroll position */
              var target = $('.fadeScroll');
              var targetHeight = target.outerHeight();
@@ -1420,13 +1417,13 @@
 					 }
                  }
              });
-			 
+
 			 // acc
 			 $('.toggle').click(function(e) {
 				e.preventDefault();
-			  
+
 				var $this = $(this);
-			  
+
 				if ($this.next().hasClass('show')) {
 					$this.next().removeClass('show');
 					$this.next().slideUp(350);
@@ -1449,7 +1446,7 @@
                  $('.bg-loop').css('background-position', x + 'px 0');
              }, 50);
          })
-		 
+
 		$(window).on('load', function() {
 
             $("body").show();
@@ -1470,7 +1467,7 @@
             sequence_a();
             load_owl();
     		new WOW().init();
-    		window.dispatchEvent(new Event('resize'));		
+    		window.dispatchEvent(new Event('resize'));
     		$('.grid').isotope({
     			itemSelector: '.grid-item'
             });
