@@ -266,6 +266,7 @@ header .logo-2 {
     font-family: "Lexend";
     color: #fff;
     font-size: 40px;
+    max-width: 250px;
     font-weight: 300;
 }
 
@@ -992,6 +993,10 @@ footer.footer-light {
     color: #595d69;
 }
 
+.footer-logo {
+    max-width: 300px;
+}
+
 footer.footer-light a {
     color: #595d69;
 }
@@ -1164,6 +1169,7 @@ header.header-mobile .btn-rsvp {
 
 header.header-mobile .logo-2 {
     display: inline-block;
+    margin-top: -35px;
 }
 
 header.header-mobile.header-light {
@@ -2156,6 +2162,7 @@ input[type="checkbox"] {
 
 address {
     margin-top: 20px;
+    margin-left: 30px;
 }
 
 address span {
@@ -4132,15 +4139,15 @@ i.font60 {
 }
 
 .f-box i {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .f-box.f-icon-rounded i {
     display: block;
     text-align: center;
-    padding: 22px;
-    width: 80px;
-    height: 80px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
     border-radius: 3px;
 }
 
@@ -4209,7 +4216,9 @@ i.font60 {
     margin-left: 30px;
 }
 
-.f-box.f-icon-left .fb-text {}
+.f-box.f-icon-left .fb-text {
+    margin-top: 1em;
+}
 
 .d-gallery-item {
     overflow: hidden;
