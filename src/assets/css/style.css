@@ -6222,6 +6222,7 @@ a.btn-right {
     color: #fff;
 }
 
+
 /* testimonial
 	/* ================================================== */
 
@@ -9997,7 +9998,6 @@ p.intro {
     position: absolute;
     padding: 0;
     margin: 0;
-    background-size: cover;
 }
 
 .image-container.pos-right {
@@ -11677,7 +11677,7 @@ a.read_more i {
     overflow: hidden;
     padding: 0;
     position: absolute;
-    top: 0
+    top: 0;
 }
 
 .side-bg .background-image {
