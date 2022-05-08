@@ -1,0 +1,35 @@
+@media (min-width: 800px) {
+		.experiences-wrapper {
+			min-height:600px;
+	}
+}
+
+  .cezar-img {
+		background-image: url('/assets/images/misc/cezar1.webp');
+  	max-width:50%;
+  	max-height:100%;
+		object-fit: fill;
+  }
+
+@media only screen and (max-width: 1026px) {
+  .cezar-img, .very-big-white, .title-lang {
+    display: none;
+  }
+
+	#logo {
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+
+	.topbar-widget {
+
+		display: block;
+		margin-left: 10px
+	}
+
+}
+
+.section-bio {
+	min-height: 600px;
+
+}

@@ -24,10 +24,10 @@
         <link rel="stylesheet" href="{{ '/assets/revolution/css/settings.css' | url }}" type="text/css">
         <link rel="stylesheet" href="{{ '/assets/revolution/css/layers.css' | url }}" type="text/css">
         <link rel="stylesheet" href="{{ '/assets/revolution/css/navigation.css' | url }}" type="text/css">
+        <link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}" type="text/css">
     </head>
     <body>
         <div id="wrapper">
-            {% include 'components/topbar.njk' %}
             {% include 'components/header.njk' %}
             <div class="no-bottom no-top" id="content">
                 {{content | safe}}

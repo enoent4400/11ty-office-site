@@ -8,8 +8,8 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="index.html">
-                                <img alt="" class="logo" src="{{ '/assets/images/logo-office-black.png' | url }}"/>
-                                <img alt="" class="logo-2" src="{{ '/assets/images/logo-office-white.png' | url }}"/>
+                                <img alt="" class="logo" src="{{ '/assets/images/kostic pecikoza_ENG_logo.png' | url }}"/>
+                                <img alt="" class="logo-2" src="{{ '/assets/images/kostic pecikoza_ENG_logo.png' | url }}"/>
                             </a>
                         </div>
                         <!-- logo close -->
@@ -34,11 +34,17 @@
                         <!-- mainmenu close -->
                     </div>
                     <div class="de-flex-col">
-                        <div class="h-phone md-hide">
-                            <span>Need&nbsp;Help?</span>
-                            <i class="fa fa-phone"></i>
-                            1 200 300 9000</div>
-                        <span id="menu-btn"></span>
+										  <div class="topbar-right">
+                					<span class="topbar-widget">
+															{% if locale == 'en'%}
+																	<a style="color:#ffff" href="/sr/{{ pageUrl }}" hreflang="sr"><span style="margin-left: 15px;">🇷🇸 &nbsp;</span><span class="title-lang">Srpski</span></a>
+															{% else %}
+																	<a style="color:#ffff" href="/en/{{ pageUrl }}" hreflang="en"><span style="margin-left: 15px;">🇬🇧 &nbsp;</span><span class="title-lang">English</span></a>
+															{% endif %}
+                					</span>
+
+													 <span id="menu-btn"></span>
+            					</div>
                     </div>
                 </div>
             </div>

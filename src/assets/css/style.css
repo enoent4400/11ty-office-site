@@ -149,7 +149,7 @@ header {
     position: absolute;
     left: 0;
     z-index: 1001;
-    background: rgba(17, 17, 17, .5);
+    background: #000000;
     margin: 0;
     height: 90px;
     /*border-bottom:solid 1px rgba(255,255,255,0);*/
@@ -170,7 +170,7 @@ header .info {
     padding: 10px 0 10px 0;
     width: 100%;
     z-index: 100;
-    background: #242424;
+    background: #000000;
 }
 
 header .info .col {
@@ -209,7 +209,7 @@ header .info strong {
 }
 
 header.header-bg {
-    background: rgba(0, 0, 0, 0.5);
+    background: #000000;
 }
 
 header.transparent {
@@ -295,7 +295,7 @@ header.smaller #mainmenu ul ul {
 }
 
 header.smaller {
-    background: rgba(17, 17, 17, .8);
+    background: #000000;
     position: fixed;
     top: 0px;
     padding: 0;
@@ -318,7 +318,7 @@ header.smaller div#logo,
 header.s2 div#logo {}
 
 header.smaller.scroll-light {
-    background: #ffffff;
+    background: #00000;
     /*border-bottom:solid 1px #eeeeee;*/
 }
 
@@ -839,6 +839,7 @@ header.smaller.scroll-light #mainmenu>li.menu-item-has-children>a:after {
 header.header-mobile #mainmenu>li ul.mega {
     visibility: visible;
     opacity: 1;
+		background-color: #000
 }
 
 header:not(.header-mobile) #mainmenu>li:hover ul.mega {
@@ -850,7 +851,6 @@ header:not(.header-mobile) #mainmenu>li:hover ul.mega {
 #menu-btn {
     display: none;
     float: right;
-    margin-top: -3px;
     width: 32px;
     height: 32px;
     padding: 4px;
@@ -1135,7 +1135,7 @@ header.s2 #mainmenu>li>a {
 
 header.header-mobile {
     position: absolute;
-    background: #fff;
+    background: #000;
     top: 0;
     height: 90px;
 }
@@ -1230,55 +1230,6 @@ header.header-light .logo-2 {
     background: #ffffff;
 }
 
-#topbar:not(.topbar-noborder) .topbar-right .topbar-widget {
-    border-left: solid 1px rgba(255, 255, 255, .1);
-}
-
-#topbar:not(.topbar-noborder) .topbar-right span:last-child {
-    border-right: solid 1px rgba(255, 255, 255, .1);
-}
-
-#topbar:not(.topbar-noborder) .topbar-light .topbar-right .topbar-widget {
-    border-left: solid 1px #eee;
-}
-
-#topbar:not(.topbar-noborder) .topbar-light .topbar-right span:last-child {
-    border-right: solid 1px #eee;
-}
-
-#topbar:not(.topbar-noborder) .tb-light .topbar-right .topbar-widget {
-    border-left: solid 1px #eeeeee;
-}
-
-#topbar:not(.topbar-noborder) .tb-light .topbar-right span:last-child {
-    border-right: solid 1px #eeeeee;
-}
-
-/* topbar left content */
-.topbar-left {
-    float: left;
-}
-
-#topbar:not(.topbar-noborder) .topbar-left .topbar-widget {
-    border-right: solid 1px rgba(255, 255, 255, .1);
-}
-
-#topbar:not(.topbar-noborder) .topbar-light .topbar-left .topbar-widget {
-    border-right: solid 1px #eee;
-}
-
-#topbar:not(.topbar-noborder) .topbar-left span:first-child {
-    border-left: solid 1px rgba(255, 255, 255, .1);
-}
-
-#topbar:not(.topbar-noborder) .tb-light .topbar-left .topbar-widget {
-    border-right: solid 1px #eeeeee;
-}
-
-#topbar:not(.topbar-noborder) .tb-light .topbar-left span:first-child {
-    border-left: solid 1px #eeeeee;
-}
-
 .h-phone {
     position: relative;
     font-weight: bold;
@@ -1321,9 +1272,6 @@ header.header-light .logo-2 {
     margin-right: 10px;
 }
 
-.h-sub .topbar-widget {
-    padding: 12px;
-}
 
 .topbar-widget:before {
     float: left;
@@ -1363,17 +1311,6 @@ header.header-light .logo-2 {
     border-left: solid 1px #eeeeee;
 }
 
-#topbar:not(.topbar-noborder) .topbar-widget.tb-social a {
-    border-left: solid 1px rgba(255, 255, 255, .1);
-}
-
-.tb-light .topbar-widget.tb-social a {
-    border-left: solid 1px #eeeeee;
-}
-
-.topbar-widget.tb-social a:first-child {
-    border: none;
-}
 
 /* topbar end here */
 
@@ -12022,7 +11959,6 @@ a.btn-slider:hover {
     outline: none;
     color: #888;
     text-decoration: none;
-    color: #888;
     padding: 5px 20px 5px 20px;
     border-radius: 3px;
     -moz-border-radius: 300px;
@@ -12828,7 +12764,7 @@ img {
     }
 
     header.header-mobile #mainmenu li a {
-        color: #888;
+        color: #fff;
     }
 
     header.header-mobile #mainmenu li a:hover {
@@ -12836,7 +12772,7 @@ img {
     }
 
     header.header-mobile #mainmenu li li a:hover {
-        color: #888;
+        color: #fff;
     }
 
     header.header-mobile #mainmenu li ul {
