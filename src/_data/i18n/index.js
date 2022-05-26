@@ -45,8 +45,8 @@ module.exports = {
       'sr': 'Poresko pravo'
     },
     practiceAreasFamily: {
-      'en': 'Family Law',
-      'sr': 'Porodično pravo'
+      'en': 'Family and Inheritance Law',
+      'sr': 'Porodično i nasledno pravo'
     },
     practiceAreasProperty: {
       'en': 'Property Law',
@@ -66,7 +66,7 @@ module.exports = {
     },
     practiceAreasContract: {
       'en': 'Contract Law',
-      'sr': 'Ugovorno pravo'
+      'sr': 'Obligaciono pravo'
     },
     practiceAreasOpinions: {
       'en': 'Drafting Legal Opinions',
