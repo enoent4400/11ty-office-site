@@ -28,6 +28,11 @@ module.exports = {
       'en': 'Contact',
       'sr': 'Kontakt'
     },
+		ourFirm: {
+			'en': 'Kostić Law Office was founded in 1968 by Miloš Kostić - attorney at law (1939-2021). During many years of legal practice, the office primarily focus was on civil, sports commercial and IP law. As a result of many years of cooperation, it merged with the Law Office Pecikoza, whose founder, Jelena Mihalic Pecikoza - attorney at law, has many years of experience in the fields of real estate, commercial and IP Law.',
+			'sr': 'Advokatska kancelarija Kostić osnovana je 1968. godine od strane advokata Miloša Kostića (1939-2021). U svojoj bogatoj advokatskoj praksi kancelarija se bavila primarno građanskim pravom, sportskim pravom, privrednim pravom i pravom intelektualne svojine. Kao rezultat dugogodišnje saradnje, došlo je do spajanja sa Advokatskom kancelarijom Pecikoza, ciji osnivac advokat Jelena Mihalic Pecikoza poseduje dugogdisnje iskustvo rada u oblastima imovinsko-pravnih odnosa, privrednog i autorskog prava.'
+
+		},
     practiceAreasCommercial: {
       'en': 'Commercial Law',
       'sr': 'Privredno pravo'

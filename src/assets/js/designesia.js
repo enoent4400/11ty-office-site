@@ -1466,7 +1466,7 @@
             sequence();
             sequence_a();
             load_owl();
-    		new WOW().init();
+    		new WOW({ mobile: false }).init();
     		window.dispatchEvent(new Event('resize'));
     		$('.grid').isotope({
     			itemSelector: '.grid-item'

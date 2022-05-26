@@ -2,6 +2,23 @@
 	display: none
 }
 
+.section-highlight {
+	padding-bottom: 0;
+}
+
+.cezar-img {
+	background-image: url('/assets/images/misc/milos_kostic_2_gw.webp');
+	max-width:50%;
+	max-height:100%;
+	object-fit: fill;
+}
+
+.section-bio {
+	min-height: 600px;
+	padding-bottom: 0;
+}
+
+
 @media (min-width: 800px) {
 	.experiences-wrapper {
 			min-height:600px;
@@ -10,6 +27,12 @@
 	.web-only {
 		display: block;
 	}
+
+
+	#subheader {
+		height: 400px;
+	}
+
 }
 
 @media (max-width: 800px) {
@@ -18,32 +41,32 @@
 	}
 }
 
-  .cezar-img {
-		background-image: url('/assets/images/misc/milos_kostic_2_gw.jpg');
-  	max-width:50%;
-  	max-height:100%;
-		object-fit: fill;
-  }
+
 
 @media only screen and (max-width: 1026px) {
-  .cezar-img, .very-big-white, .title-lang {
+ .very-big-white, .title-lang {
     display: none;
   }
+
+	.cezar-img {
+		max-width: 100%;
+		margin-bottom: 38px;
+	}
 
 	#logo {
 		margin-top: 20px;
 		margin-left: 10px;
 	}
 
-	.topbar-widget {
 
+	#subheader {
+		padding-bottom: 10px
+	}
+
+	.topbar-widget {
 		display: block;
 		margin-left: 10px
 	}
 
 }
 
-.section-bio {
-	min-height: 600px;
-
-}
