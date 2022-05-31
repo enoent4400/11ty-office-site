@@ -3,10 +3,14 @@
         <div class="de-flex justify-content-center">
             <div class="de-flex-col">
                 <div class="widget">
-                    <a href="index.html"><img alt="" class="footer-logo mb20 ml20" src="{{ '/assets/images/kostic pecikoza_ENG_logo.png' | url }}"> </a>
+												{% if locale == 'en'%}
+                    						<a href="/"><img alt="" class="footer-logo mb20 ml20" src="{{ '/assets/images/kostic_pecikoza_ENG_logo.png' | url }}"> </a>
+															{% else %}
+                    							<a href="/"><img alt="" class="footer-logo mb20 ml20" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"> </a>
+															{% endif %}
                     <address class="s1 footer-address">
                         <span>
-                            <i class="id-color fa fa-map-marker fa-lg"></i>Kralja Milana 10, Beograd</span>
+                            <i class="id-color fa fa-map-marker fa-lg"></i>Kralja Milana 10, {{'belgrade' | i18n}}</span>
                         <span>
                             <i class="id-color fa fa-phone fa-lg"></i>+381 11 2687930</span>
                         <span>

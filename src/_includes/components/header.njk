@@ -8,8 +8,14 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="/">
-                                <img alt="" class="logo" src="{{ '/assets/images/kostic pecikoza_ENG_logo.png' | url }}"/>
-                                <img alt="" class="logo-2" src="{{ '/assets/images/kostic pecikoza_ENG_logo.png' | url }}"/>
+															{% if locale == 'en'%}
+                                <img alt="logo_eng" class="logo" src="{{ '/assets/images/kostic_pecikoza_ENG_logo.png' | url }}"/>
+                                <img alt="logo_eng" class="logo-2" src="{{ '/assets/images/kostic_pecikoza_ENG_logo.png' | url }}"/>
+															{% else %}
+																  <img alt="logo_srb" class="logo" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"/>
+                                	<img alt="logo_srb" class="logo-2" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"/>
+															{% endif %}
+
                             </a>
                         </div>
                         <!-- logo close -->

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>{{ title }}</title>
+				<link rel="icon" type="image/x-icon" href="{{'/assets/images/favicon.ico' | url}}">
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <meta content="{{ meta }}" name="description"/>
         <meta content="" name="keywords"/>
@@ -79,7 +80,8 @@
                     delay: 5000,
                     navigation: {
                         arrows: {
-                            enable: true
+                            enable: true,
+														hide_onmobile: true,
                         },
                         bullets: {
                             enable: true,
@@ -89,7 +91,7 @@
                             direction: "horizontal",
                             h_align: "center",
                             v_align: "bottom",
-                            h_offset: 20,
+                            h_offset: 10,
                             v_offset: 30,
                             space: 5
                         }

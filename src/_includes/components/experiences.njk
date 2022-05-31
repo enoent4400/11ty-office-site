@@ -2,9 +2,9 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="offset-lg-7">
-                    <span class="p-title">Experiences</span><br>
+                    <span class="p-title">{{'experiences.title' | i18n}}</span><br>
                     <h2>
-                        Let Our Experience<br>be Your Guide
+                       {{'experiences.punchline.firstPart' | i18n}} <br>   {{'experiences.punchline.secondPart' | i18n}}
                     </h2>
 										<div>
 
@@ -12,12 +12,22 @@
 													<li class="nav-item">
 															<a
 																	class="nav-link active"
+																	id="pills-contact-tab"
+																	data-toggle="pill"
+																	href="#pills-contact"
+																	role="tab"
+																	aria-controls="pills-contact"
+																	aria-selected="false">{{'experiences.ourOffice.title' | i18n}}</a>
+													</li>
+													<li class="nav-item">
+															<a
+																	class="nav-link"
 																	id="pills-home-tab"
 																	data-toggle="pill"
 																	href="#pills-home"
 																	role="tab"
 																	aria-controls="pills-home"
-																	aria-selected="true">Our Attorneys</a>
+																	aria-selected="true">{{'experiences.ourAttorneys.title' | i18n}}</a>
 													</li>
 													<li class="nav-item">
 															<a
@@ -27,29 +37,19 @@
 																	href="#pills-profile"
 																	role="tab"
 																	aria-controls="pills-profile"
-																	aria-selected="false">Our Principles</a>
-													</li>
-													<li class="nav-item">
-															<a
-																	class="nav-link"
-																	id="pills-contact-tab"
-																	data-toggle="pill"
-																	href="#pills-contact"
-																	role="tab"
-																	aria-controls="pills-contact"
-																	aria-selected="false">Our Office</a>
+																	aria-selected="false">{{'experiences.ourPrinciples.title' | i18n}}</a>
 													</li>
 											</ul>
 										</div>
                     <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                             <p>{{'experiences.ourOffice.description' | i18n}}</p>
+                        </div>
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <p>Our team is comprised of passionate and seasoned attorneys with a mindset of serving you — we are easy to work with and relate to our clients. From the moment we agree to work together until we close the case, every step is formulated with you, the client, in mind.</p>
+                            <p>{{'experiences.ourAttorneys.description' | i18n}}</p>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <p>Part of our winning strategy is simply caring more, but it goes much further than that. When you choose our Law Firm, you can be sure that protection of your rights is in good hands.</p>
-                        </div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                             <p>{{'ourFirm' | i18n}}</p>
+                            <p>{{'experiences.ourPrinciples.description' | i18n}}</p>
                         </div>
                     </div>
                 </div>
