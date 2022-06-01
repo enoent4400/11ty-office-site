@@ -1,129 +1,161 @@
 <!DOCTYPE html>
 <html lang="{{ locale }}" dir="{{ dir }}">
-    <head>
-        <meta charset="utf-8"/>
-        <title>{{ title }}</title>
+		<head>
+				{% if env.isProd %}
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async="async" src="https://www.googletagmanager.com/gtag/js?id={{ env.tracking.gtag }}"></script>
+				<script>
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+								dataLayer.push(arguments);
+						}
+						gtag('js', new Date());
+
+						gtag('config', '{{ env.tracking.gtag }}');
+				</script>
+				{% endif %}
+				{% if ignore %}
+    			<meta name="robots" content="noindex"/>
+  			{% endif %}
+				<meta charset="utf-8"/>
+				<title>{{ title }}</title>
 				<link rel="icon" type="image/x-icon" href="{{'/assets/images/favicon.ico' | url}}">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <meta content="{{ meta }}" name="description"/>
-        <meta content="" name="keywords"/>
-        <meta content="" name="author"/>
-        <link id="bootstrap" href="{{ '/assets/css/bootstrap.min.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link id="bootstrap-grid" href="{{ '/assets/css/bootstrap-grid.min.css' | url  }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link id="bootstrap-reboot" href="{{ '/assets/css/bootstrap-reboot.min.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link href="{{ '/assets/css/animate.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link href="{{ '/assets/css/owl.carousel.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link href="{{ '/assets/css/owl.theme.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link href="{{ '/assets/css/owl.transitions.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link
-        href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" type="text/css"/> <!-- color scheme -->
-        <link id="colors" href="{{ '/assets/css/colors/scheme-01.css' | url }}" rel="stylesheet" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
-        <link
-        href="{{ '/assets/css/coloring.css' | url }}" rel="stylesheet" type="text/css"/> <!-- RS5.0 Stylesheet -->
-        <link rel="stylesheet" href="{{ '/assets/revolution/css/settings.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
-        <link rel="stylesheet" href="{{ '/assets/revolution/css/layers.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
-        <link rel="stylesheet" href="{{ '/assets/revolution/css/navigation.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
-        <link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
-    </head>
-    <body>
-        <div id="wrapper">
-            {% include 'components/header.njk' %}
-            <div class="no-bottom no-top" id="content">
-                {{content | safe}}
-            </div>
-            <!-- content close -->
-            <a href="#" id="back-to-top"></a>
-            <!-- footer begin -->
-            {% include 'components/footer.njk' %}
-            <div id="preloader">
-                <div class="spinner">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Javascript Files ================================================== -->
-        <script src="{{ '/assets/js/jquery.min.js' | url }}"></script>
-        <script src="{{ '/assets/js/bootstrap.min.js' | url }}"></script>
-        <script src="{{ '/assets/js/wow.min.js' | url }}"></script>
-        <script src="{{ '/assets/js/jquery.isotope.min.js' | url }}"></script>
-        <script src="{{ '/assets/js/easing.js' | url }}"></script>
-        <script src="{{ '/assets/js/owl.carousel.js' | url }} "></script>
-        <script src="{{ '/assets/js/validation.js' | url }} "></script>
-        <script src="{{ '/assets/js/jquery.magnific-popup.min.js' | url }} "></script>
-        <script src="{{ '/assets/js/enquire.min.js' | url }}"></script>
-        <script src="{{ '/assets/js/jquery.stellar.min.js' | url }}"></script>
-        <script src="{{ '/assets/js/jquery.plugin.js' | url }}"></script>
-        <script src="{{ '/assets/js/typed.js' | url }}"></script>
-        <script src="{{ '/assets/js/jquery.countTo.js' | url }}"></script>
-        <script src="{{ '/assets/js/jquery.countdown.js' | url }}"></script>
-        <script src="{{ '/assets/js/typed.js' | url }}"></script>
-        <script src="{{ '/assets/js/designesia.js' | url }}"></script>
-        <!-- RS5.0 Core JS Files -->
-        <script type="text/javascript" src="{{ '/assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0' | url }}"></script>
-        <!-- RS5.0 Extensions Files -->
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.video.min.js' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.slideanims.min.js' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.navigation.min.js' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.actions.min.js' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.kenburn.min.js' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.migration.min.js' | url }}"></script>
-        <script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.parallax.min.js' | url }}"></script>
-        <script>
-            jQuery(document).ready(function () { // revolution slider
-                jQuery("#slider-revolution").revolution({
-                    sliderType: "standard",
-                    sliderLayout: "fullwidth",
-                    delay: 5000,
-                    navigation: {
-                        arrows: {
-                            enable: true,
-														hide_onmobile: true,
-                        },
-                        bullets: {
-                            enable: true,
-                            hide_onmobile: false,
-                            style: "hermes",
-                            hide_onleave: false,
-                            direction: "horizontal",
-                            h_align: "center",
-                            v_align: "bottom",
-                            h_offset: 10,
-                            v_offset: 30,
-                            space: 5
-                        }
-                    },
-                    parallax: {
-                        type: "mouse",
-                        origo: "slidercenter",
-                        speed: 2000,
-                        levels: [
-                            2,
-                            3,
-                            4,
-                            5,
-                            6,
-                            7,
-                            12,
-                            16,
-                            10,
-                            50
-                        ]
-                    },
-                    responsiveLevels: [
-                        1920, 1380, 1240
-                    ],
-                    gridwidth: [
-                        1200, 1200, 940
-                    ],
-                    spinner: "off",
-                    gridheight: 700,
-                    disableProgressBar: "on"
-                });
-            });
-        </script>
-    </body>
+				<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+				<meta content="{{ meta }}" name="description"/>
+				<meta property="og:url" content="https://kplaw.rs">
+				<meta property="og:type" content="website">
+				<meta property="og:site_name" content=" Advokatska kancelarija Kostić-Pecikoza, Privredno pravo, Autorski sporovi, Naplata potraživanja">
+				<meta property="og:title" content="Law Office Kostic Pecikoza">
+				<meta property="og:description" content="{{ meta }}">
+				<meta property="og:image" content="{{'/assets/images/slider/justitia1.webp' | url}}"/>
+  			<meta property="og:image:width" content="1200" />
+  			<meta property="og:image:height" content="675" />
+				<meta content="{{ keywords }}" name="keywords"/>
+				<meta content="" name="author"/>
+				<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "WebSite",
+					"url" : "https:\/\/kplaw\/en"
+				}
+			  </script>
+				<link id="bootstrap" href="{{ '/assets/css/bootstrap.min.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link id="bootstrap-grid" href="{{ '/assets/css/bootstrap-grid.min.css' | url  }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link id="bootstrap-reboot" href="{{ '/assets/css/bootstrap-reboot.min.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link rel="canonical" href="https://kplaw.rs/en">
+				<link href="{{ '/assets/css/animate.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link href="{{ '/assets/css/owl.carousel.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link href="{{ '/assets/css/owl.theme.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link href="{{ '/assets/css/owl.transitions.css' | url }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link href="{{ '/assets/css/style.css' | url }}" rel="stylesheet" type="text/css"/>
+				<!-- color scheme -->
+				<link id="colors" href="{{ '/assets/css/colors/scheme-01.css' | url }}" rel="stylesheet" onload="this.onload=null;this.removeAttribute('media');" type="text/css"/>
+				<link href="{{ '/assets/css/coloring.css' | url }}" rel="stylesheet" type="text/css"/>
+				<!-- RS5.0 Stylesheet -->
+				<link rel="stylesheet" href="{{ '/assets/revolution/css/settings.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
+				<link rel="stylesheet" href="{{ '/assets/revolution/css/layers.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
+				<link rel="stylesheet" href="{{ '/assets/revolution/css/navigation.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
+				<link rel="stylesheet" href="{{ '/assets/css/custom.css' | url }}" media="print" onload="this.onload=null;this.removeAttribute('media');" type="text/css">
+		</head>
+		<body>
+				<div id="wrapper">
+						{% include 'components/header.njk' %}
+						<div class="no-bottom no-top" id="content">
+								{{content | safe}}
+						</div>
+						<!-- content close -->
+						<a href="#" id="back-to-top"></a>
+						<!-- footer begin -->
+						{% include 'components/footer.njk' %}
+						<div id="preloader">
+								<div class="spinner">
+										<div class="bounce1"></div>
+										<div class="bounce2"></div>
+										<div class="bounce3"></div>
+								</div>
+						</div>
+				</div>
+				<!-- Javascript Files ================================================== -->
+				<script src="{{ '/assets/js/jquery.min.js' | url }}"></script>
+				<script src="{{ '/assets/js/bootstrap.min.js' | url }}"></script>
+				<script src="{{ '/assets/js/wow.min.js' | url }}"></script>
+				<script src="{{ '/assets/js/jquery.isotope.min.js' | url }}"></script>
+				<script src="{{ '/assets/js/easing.js' | url }}"></script>
+				<script src="{{ '/assets/js/owl.carousel.js' | url }} "></script>
+				<script src="{{ '/assets/js/validation.js' | url }} "></script>
+				<script src="{{ '/assets/js/jquery.magnific-popup.min.js' | url }} "></script>
+				<script src="{{ '/assets/js/enquire.min.js' | url }}"></script>
+				<script src="{{ '/assets/js/jquery.stellar.min.js' | url }}"></script>
+				<script src="{{ '/assets/js/jquery.plugin.js' | url }}"></script>
+				<script src="{{ '/assets/js/typed.js' | url }}"></script>
+				<script src="{{ '/assets/js/jquery.countTo.js' | url }}"></script>
+				<script src="{{ '/assets/js/jquery.countdown.js' | url }}"></script>
+				<script src="{{ '/assets/js/typed.js' | url }}"></script>
+				<script src="{{ '/assets/js/designesia.js' | url }}"></script>
+				<!-- RS5.0 Core JS Files -->
+				<script type="text/javascript" src="{{ '/assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0' | url }}"></script>
+				<!-- RS5.0 Extensions Files -->
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.video.min.js' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.slideanims.min.js' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.navigation.min.js' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.actions.min.js' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.kenburn.min.js' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.migration.min.js' | url }}"></script>
+				<script type="text/javascript" src="{{ '/assets/revolution/js/extensions/revolution.extension.parallax.min.js' | url }}"></script>
+				<script>
+						jQuery(document).ready(function () { // revolution slider
+								jQuery("#slider-revolution").revolution({
+										sliderType: "standard",
+										sliderLayout: "fullwidth",
+										delay: 5000,
+										navigation: {
+												arrows: {
+														enable: true,
+														hide_onmobile: true
+												},
+												bullets: {
+														enable: true,
+														hide_onmobile: false,
+														style: "hermes",
+														hide_onleave: false,
+														direction: "horizontal",
+														h_align: "center",
+														v_align: "bottom",
+														h_offset: 10,
+														v_offset: 30,
+														space: 5
+												}
+										},
+										parallax: {
+												type: "mouse",
+												origo: "slidercenter",
+												speed: 2000,
+												levels: [
+														2,
+														3,
+														4,
+														5,
+														6,
+														7,
+														12,
+														16,
+														10,
+														50
+												]
+										},
+										responsiveLevels: [
+												1920, 1380, 1240
+										],
+										gridwidth: [
+												1200, 1200, 940
+										],
+										spinner: "off",
+										gridheight: 700,
+										disableProgressBar: "on"
+								});
+						});
+				</script>
+		</body>
 </html>
