@@ -1,38 +1,45 @@
 <footer>
-    <div class="container">
-        <div class="de-flex justify-content-center">
-            <div class="de-flex-col">
-                <div class="widget">
-												{% if locale == 'en'%}
-                    						<a href="/"><img alt="" class="footer-logo mb20 ml20" src="{{ '/assets/images/kostic_pecikoza_ENG_logo.png' | url }}"> </a>
-															{% else %}
-                    							<a href="/"><img alt="" class="footer-logo mb20 ml20" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"> </a>
-															{% endif %}
-                    <address class="s1 footer-address">
-                        <span>
-                            <i class="id-color fa fa-map-marker fa-lg"></i>Kralja Milana 10, {{'belgrade' | i18n}}</span>
-                        <span>
-                            <i class="id-color fa fa-phone fa-lg"></i>+381 11 2687930</span>
-                        <span>
-                            <i class="id-color fa fa-envelope-o fa-lg"></i>
-                            <a href="mailto:contact@example.com">office@kplaw.rs</a>
-                        </span>
-                    </address>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="subfooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="de-flex">
-                        <div class="de-flex-col">
-                            &copy; KP Law Office
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="container">
+				<div class="de-flex justify-content-center">
+						<div class="de-flex-col">
+								<div class="widget">
+										{% if locale == 'en'%}
+												<a href="/"><img alt="" class="footer-logo mb20 ml20" src="{{ '/assets/images/kostic_pecikoza_ENG_logo.png' | url }}">
+												</a>
+										{% else %}
+												<a href="/"><img alt="" class="footer-logo mb20 ml20" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}">
+												</a>
+										{% endif %}
+										<address class="s1 footer-address">
+												<span>
+														<a href="https://goo.gl/maps/aBd3cDZhKUuddxuq5">
+																<i class="id-color fa fa-map-marker fa-lg"></i>Kralja Milana 10,
+																{{'belgrade' | i18n}}</span>
+												</a>
+												<span>
+													<a href="tel:+381112687930">
+														<i class="id-color fa fa-phone fa-lg"></i>+381 11 2687930</span>
+													</a>
+												<span>
+														<i class="id-color fa fa-envelope-o fa-lg"></i>
+														<a href="mailto:office@kplaw.rs">office@kplaw.rs</a>
+												</span>
+										</address>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div class="subfooter">
+				<div class="container">
+						<div class="row">
+								<div class="col-md-12">
+										<div class="de-flex">
+												<div class="de-flex-col">
+														&copy; KP Law Office
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
 </footer>

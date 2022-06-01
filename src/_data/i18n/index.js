@@ -57,7 +57,7 @@ module.exports = {
 				'sr': 'Dozvolite da Vas naše',
 				},
 				secondPart: {
-					'sr': 'iskutvo vodi.',
+					'sr': 'iskustvo vodi.',
 					'en': 'Be Your Guide.'
 				}
 		},
@@ -68,7 +68,7 @@ module.exports = {
 			},
 			description: {
 				'en': 'Kostić Law Office was founded in 1968 by Miloš Kostić - attorney at law (1939-2021). During many years of legal practice, the office primarily focus was on civil, sports commercial and IP law. As a result of many years of cooperation, it merged with the Law Office Pecikoza, whose founder, Jelena Mihalic Pecikoza - attorney at law, has many years of experience in the fields of real estate, commercial and IP Law.',
-				'sr': 'Advokatska kancelarija Kostić osnovana je 1968. godine od strane advokata Miloša Kostića (1939-2021). U svojoj bogatoj advokatskoj praksi kancelarija se bavila primarno građanskim pravom, sportskim pravom, privrednim pravom i pravom intelektualne svojine. Kao rezultat dugogodišnje saradnje, došlo je do spajanja sa Advokatskom kancelarijom Pecikoza, ciji osnivac advokat Jelena Mihalic Pecikoza poseduje dugogdisnje iskustvo rada u oblastima imovinsko-pravnih odnosa, privrednog i autorskog prava.'
+				'sr': 'Advokatska kancelarija Kostić osnovana je 1968. godine od strane advokata Miloša Kostića (1939-2021). U svojoj bogatoj advokatskoj praksi kancelarija se bavila primarno građanskim pravom, sportskim pravom, privrednim pravom i pravom intelektualne svojine. Kao rezultat dugogodišnje saradnje, došlo je do spajanja sa Advokatskom kancelarijom Pecikoza, čiji osnivač advokat Jelena Mihalić Pecikoza poseduje dugogdišnje iskustvo rada u oblastima imovinsko-pravnih odnosa, privrednog i autorskog prava.'
 			}
 		},
 		ourAttorneys: {
@@ -78,7 +78,7 @@ module.exports = {
 			},
 			description: {
 				'en': 'Our team is comprised of passionate and seasoned attorneys with a mindset of serving you — we are easy to work with and relate to our clients. From the moment we agree to work together until we close the case, every step is formulated with you, the client, in mind.',
-				'sr': 'Naš tim se sastoji od iskusnih i posvećenih advokata čiji je cilj da vam pomognu – izgradnja odnosa i jednostavnost komunikacije sa klijentima je ono što pravi razliku. Od trenutka otpočinjanja saradnje, svaki korak je pažljivo isplaniran zajedno sa vama, jer klijenti su naš prioritet.',
+				'sr': 'Naš tim se sastoji od iskusnih i posvećenih advokata čiji je cilj da Vam pomognu – izgradnja odnosa i jednostavnost komunikacije sa klijentima je ono što pravi razliku. Od trenutka otpočinjanja saradnje, svaki korak je pažljivo isplaniran zajedno sa Vama, jer klijenti su naš prioritet.',
 			}
 		},
 		ourPrinciples: {
@@ -88,7 +88,7 @@ module.exports = {
 			},
 			description: {
 				'en': 'Part of our winning strategy is simply caring more, but it goes much further than that. When you choose our Law Firm, you can be sure that protection of your rights is in good hands.',
-				'sr': 'Deo pobedničke strategije jeste više brige o klijentima - ali i mnogo više od toga. Od trenutka kada izaberete našu advokatsku kancelariju možete biti sigurni da je zaštita vaših prava u sigurnim rukama.',
+				'sr': 'Deo pobedničke strategije jeste više brige o klijentima - ali i mnogo više od toga. Od trenutka kada izaberete našu advokatsku kancelariju možete biti sigurni da je zaštita Vaših prava u sigurnim rukama.',
 			}
 		},
 	},
@@ -110,7 +110,7 @@ module.exports = {
 			},
 			content: {
 				'en': 'Getting the best result for your case means having a team of attorneys with experience in the local courts and with domestic authorities.',
-				'sr': 'Postizanje najboljih rezultata za vaš slučaj zahteva tim advokata koji poseduju iskustvo pred lokalnim sudovima i drugim nadležnim organima.'
+				'sr': 'Postizanje najboljih rezultata za Vaš slučaj zahteva tim advokata koji poseduju iskustvo pred sudovima i drugim nadležnim organima.'
 			}
 		}
 
@@ -118,7 +118,7 @@ module.exports = {
 	intro: {
 		punchline: {
 			'en': 'We strive to positively influence our community by adopting sustainable business practices and by providing fair and transparent legal services. We believe that by using technology to create efficiency in our practice we are able to increase access to high quality legal services for both individuals and business owners.',
-			'sr': 'Nastojimo da izvršima pozitivan uticaj na poslovno okruženje usvajanjem održive poslovne prakse i pružanjem poštenih i transparentnih advokatskih usluga. Upotrebom tehnologije stvaramo efikasnost u obavljanju našeg posla i olakšavamo pristup efikasnoj pravnoj zaštiti kako fizičkim tako i pravnim licima.'
+			'sr': 'Nastojimo da izvršimo pozitivan uticaj na poslovno okruženje usvajanjem održive poslovne prakse i pružanjem poštenih i transparentnih advokatskih usluga. Upotrebom tehnologije stvaramo efikasnost u obavljanju našeg posla i olakšavamo pristup efikasnoj pravnoj zaštiti kako fizičkim tako i pravnim licima.'
 		},
 
 		welcome: {
@@ -152,7 +152,7 @@ module.exports = {
 		},
 		associate: {
 			'en': 'Associate',
-			'sr': 'Pripravnik'
+			'sr': 'Saradnik'
 		}
 	},
 	contact: {
