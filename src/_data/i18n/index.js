@@ -34,8 +34,8 @@ module.exports = {
 	},
 	home: {
 		cta: {
-			'en': 'Now! Make an Appointment.',
-			'sr': 'Odmah! Zakažite konsultacije.'
+			'en': 'Make an Appointment.',
+			'sr': 'Zakažite konsultacije.'
 		},
 		sendUsAMessage: {
 			'en': 'Send us a message',
