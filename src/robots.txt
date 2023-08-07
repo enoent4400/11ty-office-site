@@ -1,0 +1,4 @@
+Sitemap: https://kplaw.rs/sitemap.xml
+
+User-agent: *
+Disallow:

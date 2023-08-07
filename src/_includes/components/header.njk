@@ -7,16 +7,17 @@
                         class="de-flex-col">
                         <!-- logo begin -->
                         <div id="logo">
-                            <a href="/">
-															{% if locale == 'en'%}
+                        {% if locale == 'en'%}
+                            <a href="/en">
                                 <img alt="logo_eng" class="logo" src="{{ '/assets/images/kostic_pecikoza_ENG_logo.png' | url }}"/>
                                 <img alt="logo_eng" class="logo-2" src="{{ '/assets/images/kostic_pecikoza_ENG_logo.png' | url }}"/>
-															{% else %}
-																  <img alt="logo_srb" class="logo" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"/>
-                                	<img alt="logo_srb" class="logo-2" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"/>
-															{% endif %}
-
+							</a>
+                        {% else %}
+                            <a href="/sr">
+							    <img alt="logo_srb" class="logo" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"/>
+                                <img alt="logo_srb" class="logo-2" src="{{ '/assets/images/kostic_pecikoza_SRB_logo.png' | url }}"/>
                             </a>
+						{% endif %}
                         </div>
                         <!-- logo close -->
                     </div>
